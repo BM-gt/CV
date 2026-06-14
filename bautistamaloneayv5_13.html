@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Bautista Maloneay</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:ital,wght@0,300;0,400;1,300;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:ital,wght@0,300;0,400;1,300;1,400&family=Space+Mono:wght@400;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
   --bg:#050505;--s1:#0d0d0d;--s2:#141414;
@@ -112,7 +112,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;height:56px;display:flex;ali
 .co-block.current::before{content:'';position:absolute;left:-1.5rem;top:2.5rem;bottom:3rem;width:2px;background:linear-gradient(180deg,var(--a),transparent)}
 .co-head{display:flex;align-items:center;gap:1.5rem;margin-bottom:2rem}
 .co-logo-wrap{width:50px;height:50px;background:var(--s2);border:1px solid var(--faint);border-radius:8px;display:flex;align-items:center;justify-content:center;overflow:hidden;flex-shrink:0}
-.co-logo-wrap img{width:32px;height:32px;object-fit:contain;mix-blend-mode:screen;filter:brightness(3) opacity(.85)}.wtf-fulllogo{height:62px;width:auto;flex-shrink:0;object-fit:contain}.co-fulllogo{height:68px;width:auto;flex-shrink:0;object-fit:contain}
+.co-logo-wrap img{width:32px;height:32px;object-fit:contain;mix-blend-mode:screen;filter:brightness(3) opacity(.85)}.wtf-fulllogo{height:62px;width:auto;flex-shrink:0;object-fit:contain}.co-fulllogo{height:72px;width:auto;flex-shrink:0}
 .co-logo-wrap span{font-family:'Space Grotesk',sans-serif;font-size:.65rem;font-weight:700;color:#555;text-align:center;line-height:1.2;padding:2px}
 .co-name{font-family:'Space Grotesk',sans-serif;font-size:clamp(1.8rem,3.5vw,2.5rem);font-weight:700;letter-spacing:-.03em;color:var(--w);line-height:1;margin-bottom:.3rem}
 .co-meta{font-family:'Space Mono',monospace;font-size:.62rem;letter-spacing:.12em;color:var(--mid);text-transform:uppercase}
@@ -376,7 +376,20 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;height:56px;display:flex;ali
 
       <div class="co-block rv">
         <div class="co-head">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 165" class="co-fulllogo"><defs><clipPath id="cl-pk"><rect x="-5" y="-5" width="92" height="92"/></clipPath><clipPath id="cl-rd"><rect x="-5" y="86" width="90" height="90"/></clipPath></defs><circle cx="76" cy="72" r="70" fill="#d396a8" clip-path="url(#cl-pk)"/><path d="M94,5 C108,4 158,12 158,62 C158,84 140,93 118,80 C99,69 94,42 94,5Z" fill="#026459"/><circle cx="70" cy="108" r="66" fill="#b52b2c" clip-path="url(#cl-rd)"/><rect x="94" y="86" width="66" height="76" rx="14" fill="#deb527"/><text x="186" y="76" font-family="Georgia,serif" font-size="50" font-weight="400" fill="#F0F0F0" letter-spacing="-0.01em">Cravero</text><text x="186" y="138" font-family="Georgia,serif" font-size="50" font-weight="400" fill="#F0F0F0" letter-spacing="-0.01em">Lanis.</text></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 175" class="co-fulllogo">
+  <!-- Pink circle (top-left quadrant) -->
+  <circle cx="60" cy="62" r="68" fill="#CC8FA4"/>
+  <!-- Teal rounded organic shape (top-right) -->
+  <path d="M 95,8 C 110,5 165,10 167,62 C 168,90 150,100 132,90 C 116,80 96,62 95,8 Z" fill="#1C6B52"/>
+  <!-- Red circle (bottom-left quadrant) -->
+  <clipPath id="cred2"><rect x="-10" y="89" width="108" height="100"/></clipPath>
+  <circle cx="58" cy="116" r="64" clip-path="url(#cred2)" fill="#BE3038"/>
+  <!-- Gold rounded rectangle (bottom-right) -->
+  <rect x="96" y="89" width="74" height="80" rx="16" fill="#C4A520"/>
+  <!-- Wordmark in white - Playfair Display -->
+  <text x="192" y="82" font-family="'Playfair Display',Georgia,serif" font-size="54" font-weight="700" fill="#F0F0F0" letter-spacing="-0.02em">Cravero</text>
+  <text x="192" y="150" font-family="'Playfair Display',Georgia,serif" font-size="54" font-weight="700" fill="#F0F0F0" letter-spacing="-0.02em">Lanis.</text>
+</svg>
           <div>
             <div class="co-name" style="display:none">CraveroLanis</div>
             <div class="co-meta" data-es="2016 — Hoy · Con pausa" data-en="2016 — Present · With gap">2016 — Hoy · Con pausa</div>
