@@ -128,6 +128,8 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;height:56px;display:flex;ali
 .co-rdesc{font-family:'Inter',sans-serif;font-size:.93rem;line-height:1.8;color:#666}
 
 /* BRANDS GRID */
+.bm-cat{font-family:'Space Grotesk',sans-serif;font-size:.68rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--a);margin:2.4rem 0 .7rem;padding-left:.7rem;border-left:2px solid var(--a)}
+.bm-cat:first-of-type{margin-top:1.6rem}
 .bm-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:1px;background:var(--faint);border:1px solid var(--faint)}
 .bm{position:relative;overflow:hidden;background:var(--s2);padding:1.2rem .6rem;display:flex;align-items:center;justify-content:center;min-height:80px;transition:background .3s;cursor:default}
 .bm span{font-family:'Space Grotesk',sans-serif;font-size:.62rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:#3a3a3a;transition:color .25s;text-align:center;position:relative;z-index:1}
@@ -450,39 +452,14 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;height:56px;display:flex;ali
   <div class="cv-section alt">
     <div class="cv-inner">
       <p class="sec-lbl rv" data-es="Marcas trabajadas" data-en="Brands worked with">Marcas trabajadas</p>
+
+      <p class="bm-cat rv" data-es="Bebidas &amp; gastronomía" data-en="Beverages &amp; gastronomy">Bebidas &amp; gastronomía</p>
       <div class="bm-grid rv">
           <div class="bm"><span>La Serenísima</span></div>
-          <div class="bm"><span>Schneider</span></div>
-          <div class="bm"><span>Medincare</span></div>
-          <div class="bm"><span>Senior Care</span></div>
-          <div class="bm"><span>Heladeras Patrick</span></div>
-          <div class="bm"><span>Ibupirac</span></div>
-          <div class="bm"><span>Champ Frère</span></div>
-          <div class="bm"><span>Cerro Castor</span></div>
-          <div class="bm"><span>Shaq Footwear</span></div>
-          <div class="bm"><span>Hydrate</span></div>
-          <div class="bm"><span>Timberland Argentina</span></div>
-          <div class="bm"><span>Miremos Para Adentro</span></div>
-          <div class="bm"><span>Media Naranja</span></div>
           <div class="bm"><span>MUM</span></div>
-          <div class="bm"><span>Diablo Pisco</span></div>
-          <div class="bm"><span>Broccato</span></div>
-          <div class="bm"><span>Moto Unplugged (Motorola Argentina)</span></div>
           <div class="bm"><span>José Cuervo (Chile)</span></div>
           <div class="bm"><span>Agua SELTZ (Paraguay)</span></div>
-          <div class="bm"><span>Sembrasol</span></div>
-          <div class="bm"><span>IPONE Argentina</span></div>
-          <div class="bm"><span>Alpinestars</span></div>
-          <div class="bm"><span>MAHLE</span></div>
-          <div class="bm"><span>Sensus</span></div>
-          <div class="bm"><span>Starter Argentina</span></div>
-          <div class="bm"><span>Morelli</span></div>
-          <div class="bm"><span>Zahav (Perú)</span></div>
-          <div class="bm"><span>Cooperativa Capel</span></div>
-          <div class="bm"><span>Alto del Carmen</span></div>
-          <div class="bm"><span>Estrella del Elqui</span></div>
-          <div class="bm"><span>Monte Fraile</span></div>
-          <div class="bm"><span>Hacienda La Torre</span></div>
+          <div class="bm"><span>Diablo Pisco</span></div>
           <div class="bm"><span>Valdivieso</span></div>
           <div class="bm"><span>Cutty Sark</span></div>
           <div class="bm"><span>Ojo de Tigre</span></div>
@@ -490,12 +467,67 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;height:56px;display:flex;ali
           <div class="bm"><span>Master of Mixes</span></div>
           <div class="bm"><span>Kozel</span></div>
           <div class="bm"><span>Pilsner Urquell</span></div>
+          <div class="bm"><span>Zahav (Perú)</span></div>
+      </div>
+
+      <p class="bm-cat rv" data-es="Moda, calzado &amp; lifestyle" data-en="Fashion, footwear &amp; lifestyle">Moda, calzado &amp; lifestyle</p>
+      <div class="bm-grid rv">
+          <div class="bm"><span>Shaq Footwear</span></div>
+          <div class="bm"><span>Timberland Argentina</span></div>
+          <div class="bm"><span>Starter Argentina</span></div>
+          <div class="bm"><span>Alpinestars</span></div>
+      </div>
+
+      <p class="bm-cat rv" data-es="Salud &amp; farmacéutica" data-en="Health &amp; pharma">Salud &amp; farmacéutica</p>
+      <div class="bm-grid rv">
+          <div class="bm"><span>Medincare</span></div>
+          <div class="bm"><span>Senior Care</span></div>
+          <div class="bm"><span>Ibupirac</span></div>
+      </div>
+
+      <p class="bm-cat rv" data-es="Automotriz &amp; motociclismo" data-en="Automotive &amp; motorcycling">Automotriz &amp; motociclismo</p>
+      <div class="bm-grid rv">
+          <div class="bm"><span>Moto Unplugged (Motorola Argentina)</span></div>
+          <div class="bm"><span>MAHLE</span></div>
+          <div class="bm"><span>IPONE Argentina</span></div>
+          <div class="bm"><span>Sensus</span></div>
+      </div>
+
+      <p class="bm-cat rv" data-es="Electrodomésticos" data-en="Home appliances">Electrodomésticos</p>
+      <div class="bm-grid rv">
+          <div class="bm"><span>Schneider</span></div>
+          <div class="bm"><span>Heladeras Patrick</span></div>
+      </div>
+
+      <p class="bm-cat rv" data-es="Turismo &amp; centros de ski" data-en="Tourism &amp; ski resorts">Turismo &amp; centros de ski</p>
+      <div class="bm-grid rv">
+          <div class="bm"><span>Cerro Castor</span></div>
+          <div class="bm"><span>Cooperativa Capel</span></div>
+          <div class="bm"><span>Alto del Carmen</span></div>
+          <div class="bm"><span>Estrella del Elqui</span></div>
+          <div class="bm"><span>Monte Fraile</span></div>
+          <div class="bm"><span>Hacienda La Torre</span></div>
+      </div>
+
+      <p class="bm-cat rv" data-es="Pitches, licitaciones &amp; nuevos negocios" data-en="Pitches, tenders &amp; new business">Pitches, licitaciones &amp; nuevos negocios</p>
+      <div class="bm-grid rv">
           <div class="bm"><span>AMD México</span></div>
           <div class="bm"><span>Honda Perú</span></div>
           <div class="bm"><span>YPF</span></div>
           <div class="bm"><span>IEB+</span></div>
           <div class="bm"><span>DIVA</span></div>
           <div class="bm"><span>Mal Paso</span></div>
+      </div>
+
+      <p class="bm-cat rv" data-es="Branding &amp; otros proyectos" data-en="Branding &amp; other projects">Branding &amp; otros proyectos</p>
+      <div class="bm-grid rv">
+          <div class="bm"><span>Champ Frère</span></div>
+          <div class="bm"><span>Media Naranja</span></div>
+          <div class="bm"><span>Hydrate</span></div>
+          <div class="bm"><span>Miremos Para Adentro</span></div>
+          <div class="bm"><span>Broccato</span></div>
+          <div class="bm"><span>Sembrasol</span></div>
+          <div class="bm"><span>Morelli</span></div>
         </div>
     </div>
   </div>
