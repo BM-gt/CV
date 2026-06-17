@@ -93,7 +93,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;height:56px;display:flex;ali
 .cvtitle{font-family:'Space Grotesk',sans-serif;font-size:clamp(1rem,1.8vw,1.3rem);font-weight:500;color:var(--a);line-height:1.4}
 .cvquote{font-family:'Inter',sans-serif;font-style:italic;font-size:clamp(.88rem,1.3vw,1rem);color:#4a4a4a;line-height:1.75;max-width:400px;margin-bottom:auto;border-left:2px solid rgba(214,59,127,.3);padding-left:1.2rem}
 /* Stats: +N format, bigger */
-.cvstats{display:flex;gap:3.5rem;margin-top:2.5rem;padding-top:2rem;border-top:1px solid var(--faint)}@keyframes scrollBounce{0%,100%{transform:translateY(0);opacity:.4}50%{transform:translateY(8px);opacity:1}}.scroll-hint{position:absolute;bottom:2rem;left:22.5%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:.5rem;animation:scrollBounce 2s ease-in-out infinite;cursor:default;z-index:10;transition:opacity .6s}.scroll-hint.hidden{opacity:0;pointer-events:none}.scroll-hint-line{width:1px;height:28px;background:linear-gradient(to bottom,transparent,var(--a))}.scroll-hint-dot{width:5px;height:5px;border-radius:50%;background:var(--a)}.scroll-hint-txt{font-family:'Space Mono',monospace;font-size:.5rem;letter-spacing:.22em;color:var(--a);text-transform:uppercase;margin-bottom:.3rem}
+.cvstats{display:flex;gap:3.5rem;margin-top:2.5rem;padding-top:2rem;border-top:1px solid var(--faint)}@keyframes scrollBounce{0%,100%{transform:translateY(0);opacity:.4}50%{transform:translateY(8px);opacity:1}}.scroll-hint{position:absolute;bottom:2rem;left:22.5%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:.5rem;animation:scrollBounce 2s ease-in-out infinite;cursor:default;z-index:10;transition:opacity .6s}.scroll-hint.hidden{opacity:0;pointer-events:none}.scroll-hint-txt{font-family:'Space Mono',monospace;font-size:.5rem;letter-spacing:.22em;color:var(--a);text-transform:uppercase;margin-bottom:.3rem}
 .cvstat{}
 .csn{font-family:'Space Grotesk',sans-serif;font-size:4rem;font-weight:700;line-height:1;color:var(--w);display:flex;align-items:baseline;gap:.1rem}
 .csn em{color:var(--a);font-style:normal;font-size:2.5rem;font-weight:700}
@@ -361,8 +361,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;height:56px;display:flex;ali
     </div>
     <div class="scroll-hint" id="scrollHint">
       <span class="scroll-hint-txt" data-es="Scroll" data-en="Scroll">Scroll</span>
-      <div class="scroll-hint-line"></div>
-      <div class="scroll-hint-dot"></div>
+      <svg width="16" height="22" viewBox="0 0 16 22" fill="none" xmlns="http://www.w3.org/2000/svg"><line x1="8" y1="0" x2="8" y2="16" stroke="#D63B7F" stroke-width="1.5"/><polyline points="2,11 8,18 14,11" fill="none" stroke="#D63B7F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
     </div>
   </div>
 
