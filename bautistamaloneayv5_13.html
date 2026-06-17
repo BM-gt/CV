@@ -129,11 +129,11 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;height:56px;display:flex;ali
 
 /* BRANDS GRID */
 .bm-cats{display:grid;grid-template-columns:repeat(3,1fr);gap:1.6rem 2rem}
-.bm-card{padding:1rem 1.3rem;background:var(--s2);border:1px solid var(--faint);border-radius:4px}
-.bm-cat{font-family:'Space Grotesk',sans-serif;font-size:.64rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--a);margin:0 0 .65rem;padding-left:.6rem;border-left:2px solid var(--a)}
+.bm-card{padding:1rem 1.3rem;background:var(--s2);border:1px solid var(--faint);border-radius:4px;align-self:start}
+.bm-cat{font-family:'Space Grotesk',sans-serif;font-size:.64rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--mid);margin:0 0 .65rem;padding-left:.6rem;border-left:2px solid var(--faint)}
 .bm-taglist{display:flex;flex-wrap:wrap;gap:.4rem .5rem}
-.bm-tag{font-family:'Space Grotesk',sans-serif;font-size:.66rem;font-weight:500;color:var(--mid);padding:.25rem .55rem;background:var(--bg);border-radius:3px;transition:color .2s,background .2s;cursor:default}
-.bm-tag:hover{color:var(--w);background:#000}
+.bm-tag{font-family:'Space Grotesk',sans-serif;font-size:.66rem;font-weight:600;color:var(--a);padding:.25rem .55rem;background:var(--bg);border-radius:3px;transition:color .2s,background .2s;cursor:default}
+.bm-tag:hover{color:var(--w);background:var(--a)}
 
 /* TOOLS & IDIOMAS */
 .stack-row{display:grid;grid-template-columns:1fr 1fr;gap:4rem;max-width:800px;margin:0 auto}
@@ -459,19 +459,19 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;height:56px;display:flex;ali
       <div class="bm-cats rv">
         <div class="bm-card">
           <p class="bm-cat" data-es="Espumantes" data-en="Sparkling wine">Espumantes</p>
-          <div class="bm-taglist"><span class="bm-tag">Sensus</span><span class="bm-tag">Broccato</span><span class="bm-tag">Valdivieso</span></div>
+          <div class="bm-taglist"><span class="bm-tag">Sensus</span><span class="bm-tag">Broccato</span><span class="bm-tag">Grupo Valdivieso</span><span class="bm-tag">DIVA</span><span class="bm-tag">MUM (Argentina)</span></div>
         </div>
         <div class="bm-card">
           <p class="bm-cat" data-es="Piscos" data-en="Pisco">Piscos</p>
-          <div class="bm-taglist"><span class="bm-tag">Alto del Carmen</span><span class="bm-tag">Cooperativa Capel</span><span class="bm-tag">Diablo Pisco</span><span class="bm-tag">Estrella del Elqui</span></div>
+          <div class="bm-taglist"><span class="bm-tag">Alto del Carmen</span><span class="bm-tag">Diablo Pisco</span><span class="bm-tag">Estrella del Elqui</span><span class="bm-tag">Hacienda la Torre</span><span class="bm-tag">Monte Fraile</span><span class="bm-tag">Mal Paso</span><span class="bm-tag">Cooperativa Capel</span></div>
         </div>
         <div class="bm-card">
           <p class="bm-cat" data-es="Whisky" data-en="Whisky">Whisky</p>
-          <div class="bm-taglist"><span class="bm-tag">Cutty Sark</span></div>
+          <div class="bm-taglist"><span class="bm-tag">Cutty Sark</span><span class="bm-tag">Old Virginia</span></div>
         </div>
         <div class="bm-card">
-          <p class="bm-cat" data-es="Gin" data-en="Gin">Gin</p>
-          <div class="bm-taglist"><span class="bm-tag">Old Virginia</span></div>
+          <p class="bm-cat" data-es="Mezcal" data-en="Mezcal">Mezcal</p>
+          <div class="bm-taglist"><span class="bm-tag">Ojo de Tigre</span></div>
         </div>
         <div class="bm-card">
           <p class="bm-cat" data-es="Tequila" data-en="Tequila">Tequila</p>
@@ -486,116 +486,64 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;height:56px;display:flex;ali
           <div class="bm-taglist"><span class="bm-tag">Sidra 1888</span></div>
         </div>
         <div class="bm-card">
-          <p class="bm-cat" data-es="Hard seltzer" data-en="Hard seltzer">Hard seltzer</p>
+          <p class="bm-cat" data-es="Bebidas" data-en="Beverages">Bebidas</p>
           <div class="bm-taglist"><span class="bm-tag">Agua SELTZ (Paraguay)</span></div>
         </div>
         <div class="bm-card">
           <p class="bm-cat" data-es="Cervezas" data-en="Beer">Cervezas</p>
-          <div class="bm-taglist"><span class="bm-tag">Schneider</span><span class="bm-tag">Kozel</span><span class="bm-tag">Pilsner Urquell</span></div>
+          <div class="bm-taglist"><span class="bm-tag">Schneider</span><span class="bm-tag">Kozel</span><span class="bm-tag">Pilsner Urquell</span><span class="bm-tag">Rural</span></div>
         </div>
         <div class="bm-card">
-          <p class="bm-cat" data-es="Destilados premium" data-en="Premium spirits">Destilados premium</p>
-          <div class="bm-taglist"><span class="bm-tag">Monte Fraile</span><span class="bm-tag">Hacienda La Torre</span></div>
-        </div>
-        <div class="bm-card">
-          <p class="bm-cat" data-es="Calzado deportivo" data-en="Sports footwear">Calzado deportivo</p>
-          <div class="bm-taglist"><span class="bm-tag">Shaq Footwear</span></div>
-        </div>
-        <div class="bm-card">
-          <p class="bm-cat" data-es="Streetwear" data-en="Streetwear">Streetwear</p>
-          <div class="bm-taglist"><span class="bm-tag">Starter Argentina</span></div>
-        </div>
-        <div class="bm-card">
-          <p class="bm-cat" data-es="Outdoor" data-en="Outdoor">Outdoor</p>
-          <div class="bm-taglist"><span class="bm-tag">Timberland Argentina</span></div>
-        </div>
-        <div class="bm-card">
-          <p class="bm-cat" data-es="Moda" data-en="Fashion">Moda</p>
-          <div class="bm-taglist"><span class="bm-tag">Morelli</span></div>
-        </div>
-        <div class="bm-card">
-          <p class="bm-cat" data-es="Hidratación deportiva" data-en="Sports hydration">Hidratación deportiva</p>
-          <div class="bm-taglist"><span class="bm-tag">Hydrate</span></div>
-        </div>
-        <div class="bm-card">
-          <p class="bm-cat" data-es="Autopartes" data-en="Auto parts">Autopartes</p>
-          <div class="bm-taglist"><span class="bm-tag">MAHLE</span></div>
-        </div>
-        <div class="bm-card">
-          <p class="bm-cat" data-es="Motociclismo" data-en="Motorcycling">Motociclismo</p>
-          <div class="bm-taglist"><span class="bm-tag">IPONE Argentina</span><span class="bm-tag">Alpinestars</span></div>
-        </div>
-        <div class="bm-card">
-          <p class="bm-cat" data-es="Lácteos y alimentos" data-en="Dairy &amp; food">Lácteos y alimentos</p>
-          <div class="bm-taglist"><span class="bm-tag">La Serenísima</span></div>
+          <p class="bm-cat" data-es="Calzado" data-en="Footwear">Calzado</p>
+          <div class="bm-taglist"><span class="bm-tag">Shaq Footwear</span><span class="bm-tag">Starter (Argentina)</span><span class="bm-tag">Timberland (Argentina)</span></div>
         </div>
         <div class="bm-card">
           <p class="bm-cat" data-es="Electrodomésticos" data-en="Home appliances">Electrodomésticos</p>
-          <div class="bm-taglist"><span class="bm-tag">Heladeras Patrick</span></div>
+          <div class="bm-taglist"><span class="bm-tag">Morelli Cocinas</span><span class="bm-tag">Patrick</span></div>
         </div>
         <div class="bm-card">
-          <p class="bm-cat" data-es="Farmacéutica" data-en="Pharma">Farmacéutica</p>
-          <div class="bm-taglist"><span class="bm-tag">Ibupirac</span></div>
+          <p class="bm-cat" data-es="Productos isotérmicos premium" data-en="Premium insulated products">Productos isotérmicos premium</p>
+          <div class="bm-taglist"><span class="bm-tag">HYDRATE (Argentina)</span></div>
+        </div>
+        <div class="bm-card">
+          <p class="bm-cat" data-es="Automotriz" data-en="Automotive">Automotriz</p>
+          <div class="bm-taglist"><span class="bm-tag">MAHLE</span><span class="bm-tag">AUDI</span></div>
+        </div>
+        <div class="bm-card">
+          <p class="bm-cat" data-es="Motociclismo" data-en="Motorsport">Motociclismo</p>
+          <div class="bm-taglist"><span class="bm-tag">IPONE (Argentina)</span><span class="bm-tag">Alpinestars (Argentina)</span></div>
+        </div>
+        <div class="bm-card">
+          <p class="bm-cat" data-es="Lácteos y alimentos" data-en="Dairy &amp; food">Lácteos y alimentos</p>
+          <div class="bm-taglist"><span class="bm-tag">La Serenísima</span><span class="bm-tag">Sembrasol</span><span class="bm-tag">Kapi</span></div>
+        </div>
+        <div class="bm-card">
+          <p class="bm-cat" data-es="Farmacéutica" data-en="Pharmaceutical">Farmacéutica</p>
+          <div class="bm-taglist"><span class="bm-tag">Ibupirac / Pfizer</span></div>
         </div>
         <div class="bm-card">
           <p class="bm-cat" data-es="Salud y cuidado" data-en="Health &amp; care">Salud y cuidado</p>
           <div class="bm-taglist"><span class="bm-tag">Medincare</span><span class="bm-tag">Senior Care</span></div>
         </div>
         <div class="bm-card">
-          <p class="bm-cat" data-es="Tecnología" data-en="Technology">Tecnología</p>
-          <div class="bm-taglist"><span class="bm-tag">Moto Unplugged (Motorola Argentina)</span></div>
+          <p class="bm-cat" data-es="Programas internos" data-en="Internal programs">Programas internos</p>
+          <div class="bm-taglist"><span class="bm-tag">Motounplugged (Motorola Argentina)</span></div>
         </div>
         <div class="bm-card">
-          <p class="bm-cat" data-es="Turismo &amp; centros de ski" data-en="Tourism &amp; ski resorts">Turismo &amp; centros de ski</p>
+          <p class="bm-cat" data-es="Centros de ski" data-en="Ski resorts">Centros de ski</p>
           <div class="bm-taglist"><span class="bm-tag">Cerro Castor</span></div>
         </div>
         <div class="bm-card">
-          <p class="bm-cat" data-es="Real estate" data-en="Real estate">Real estate</p>
+          <p class="bm-cat" data-es="Sector inmobiliario y de la construcción" data-en="Real estate &amp; construction">Sector inmobiliario y de la construcción</p>
           <div class="bm-taglist"><span class="bm-tag">Champ Frère</span></div>
         </div>
         <div class="bm-card">
-          <p class="bm-cat" data-es="Cannabis, educación y ONG" data-en="Cannabis, education &amp; non-profit">Cannabis, educación y ONG</p>
-          <div class="bm-taglist"><span class="bm-tag">Expo Cannabis Argentina</span></div>
+          <p class="bm-cat" data-es="Textil / Hogar" data-en="Textile / Home">Textil / Hogar</p>
+          <div class="bm-taglist"><span class="bm-tag">Miremos para Adentro</span><span class="bm-tag">Media Naranja</span><span class="bm-tag">Grupo Fibransur</span></div>
         </div>
         <div class="bm-card">
-          <p class="bm-cat" data-es="Semillas y cultivo" data-en="Seeds &amp; cultivation">Semillas y cultivo</p>
-          <div class="bm-taglist"><span class="bm-tag">Sembrasol</span></div>
-        </div>
-        <div class="bm-card">
-          <p class="bm-cat" data-es="Dating &amp; relaciones" data-en="Dating &amp; relationships">Dating &amp; relaciones</p>
-          <div class="bm-taglist"><span class="bm-tag">Media Naranja</span></div>
-        </div>
-        <div class="bm-card">
-          <p class="bm-cat" data-es="Impacto social" data-en="Social impact">Impacto social</p>
-          <div class="bm-taglist"><span class="bm-tag">Miremos Para Adentro</span></div>
-        </div>
-        <div class="bm-card">
-          <p class="bm-cat" data-es="Pitches, licitaciones &amp; nuevos negocios" data-en="Pitches, tenders &amp; new business">Pitches, licitaciones &amp; nuevos negocios</p>
-          <div class="bm-taglist"><span class="bm-tag">AMD México</span><span class="bm-tag">Honda Perú</span><span class="bm-tag">YPF</span><span class="bm-tag">IEB+</span><span class="bm-tag">DIVA</span><span class="bm-tag">Mal Paso</span></div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- HERRAMIENTAS & IDIOMAS -->
-  <div class="cv-section">
-    <div class="cv-inner">
-      <p class="sec-lbl rv" style="text-align:center;border-bottom:none;padding-bottom:0;margin-bottom:2rem" data-es="Herramientas · Idiomas" data-en="Tools · Languages">Herramientas · Idiomas</p>
-      <div style="width:800px;max-width:100%;margin:0 auto 2.5rem;height:1px;background:var(--faint)"></div>
-      <div class="stack-row rv">
-        <div class="stack-group">
-          <div class="stack-title" data-es="AI Tools" data-en="AI Tools">AI Tools</div>
-          <div class="stack-item"><div class="si-dot"></div><div class="si-name">Claude</div><div class="si-role" data-es="Principal" data-en="Primary">Principal</div></div>
-          <div class="stack-item"><div class="si-dot"></div><div class="si-name">ChatGPT</div><div class="si-role" data-es="Estrategia" data-en="Strategy">Estrategia</div></div>
-          <div class="stack-item"><div class="si-dot"></div><div class="si-name">Gemini</div><div class="si-role" data-es="Análisis" data-en="Analysis">Análisis</div></div>
-          <div class="stack-item"><div class="si-dot"></div><div class="si-name">ImageFX · Magnific</div><div class="si-role" data-es="Visual" data-en="Visual">Visual</div></div>
-          <div class="stack-item"><div class="si-dot"></div><div class="si-name">Freepik AI · Nano Banana</div><div class="si-role" data-es="Imagen" data-en="Image">Imagen</div></div>
-        </div>
-        <div class="stack-group">
-          <div class="stack-title" data-es="Idiomas" data-en="Languages">Idiomas</div>
-          <div class="stack-item"><div class="si-dot"></div><div class="si-name" data-es="Español" data-en="Spanish">Español</div><div class="si-role" data-es="Nativo" data-en="Native">Nativo</div></div>
-          <div class="stack-item"><div class="si-dot"></div><div class="si-name" data-es="Inglés" data-en="English">Inglés</div><div class="si-role" data-es="B2 Alto · B2 First" data-en="B2 Upper · B2 First">B2 Alto · B2 First</div></div>
-          <div class="stack-item"><div class="si-dot"></div><div class="si-name" data-es="Portugués" data-en="Portuguese">Portugués</div><div class="si-role" data-es="Básico" data-en="Basic">Básico</div></div>
+          <p class="bm-cat" data-es="Cannabis, educación y ONG" data-en="Cannabis, education &amp; NGO">Cannabis, educación y ONG</p>
+          <div class="bm-taglist"><span class="bm-tag">Expo Cannabis Argentina (3 ediciones)</span><span class="bm-tag">CECCa</span><span class="bm-tag">Clon Factory</span></div>
         </div>
       </div>
       <p class="sec-lbl rv" style="text-align:center;border-bottom:none;padding-bottom:0;margin:3rem 0 2rem" data-es="Datos de interés" data-en="Additional info">Datos de interés</p>
